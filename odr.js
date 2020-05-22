@@ -140,10 +140,10 @@ window.addEventListener('load', function () {
         arg.Inputs.input1.Values.push(p);
 
         jQuery.ajax({
-            url: "<your URL>",
+            url: "<https://mltest.azure-api.net/predict/score>",
             beforeSend: function (xhrObj) {
                 xhrObj.setRequestHeader("Content-Type", "application/json;charset=utf-8");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "7fbc1517a69047c3a0302570f8a6a23a");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "6ed3259df5294fd6bb16549f67a4c84d");
  
             },
             type: "POST",
